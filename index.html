@@ -426,7 +426,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="footer-social-list">
           <h2 class="footer-title-contacts">Присоединяйтесь</h2>
           <ul class="footer-social list">
             <li class="footer-social-logo">
@@ -459,20 +459,55 @@
             </li>
           </ul>
         </div>
+        <div>
+          <form action="" class="footer-modal-form">
+            <h2 class="footer-form-head">Подпишитесь на рассылку</h2>
+            <label for="" class="footer-form-field">
+              <input type="text" class="footer-form-input" name="mail">
+              
+              <button class="footer-form-btn" type="submit">Подписаться
+                <svg class="footer-form-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg width="11" height="11">
             <use href="./images/sprite.svg#icon-Vector"></use>
           </svg>
         </button>
+        <form action="#" class="modal-form">
+          <p class="modal-form-head">Оставьте свои данные, мы вам перезвоним</p>
+          <label for="" class="modal-form-field">
+            Имя
+            <input type="text" class="modal-form-input">
+          </label>
+          <label for="" class="modal-form-field">
+            телефон
+            <input type="tel" class="modal-form-input">
+          </label>
+          <label for="" class="modal-form-field">
+            почта
+            <input type="mail" class="modal-form-input">
+          </label>
+          <label for="" class="modal-form-field">
+            <textarea name="user-message" class="modal-form-message"></textarea>
+          </label>
+          <input type="checkbox" modal-form-checkbox" id="accept-policy"> Соглашаюсь с рассылкой и принимаю <a href="#" class="link"> Условия договора</a></input>
+          <label for="accept-policy" class="modal-form-checkbox-label"></label>
+
+        </form>
       </div>
     </div>
     
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
     </body>
     
     </html>
