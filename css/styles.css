@@ -566,6 +566,7 @@ body {
   color: var(--primary-white);
   font-weight: 700;
   font-size: 16px;
+  letter-spacing: 0.06em;
   background-color: var(--logo-accent-color);
   box-shadow: var(--btn-shadow);
   border-radius: 4px;
