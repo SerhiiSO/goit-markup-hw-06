@@ -462,15 +462,16 @@
         <div>
           <form action="" class="footer-modal-form">
             <h2 class="footer-form-head">Подпишитесь на рассылку</h2>
-            <label for="" class="footer-form-field">
-              <input type="text" class="footer-form-input" name="email" placeholder="E-mail">
-              
-              <button class="footer-form-btn" type="submit">Подписаться
-                <svg class="footer-form-icon" width="24" height="24">
-                  <use href="./images/sprite.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </label>
+            <div class="footer-subscribe-form">
+              <label for="" class="footer-form-field">
+                <input type="text" class="footer-form-input" name="email" placeholder="E-mail">
+                <button class="footer-form-btn" type="submit">Подписаться
+                  <svg class="footer-form-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </label>
+            </div>
           </form>
         </div>
       </div>
@@ -516,8 +517,13 @@
             Комментарий
             <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
           </label>
-          <input type="checkbox" class="modal-form-checkbox" id="accept-policy"> Соглашаюсь с рассылкой и принимаю <a href="#" class="checkbox-link"> Условия договора</a></input>
-          <label for="accept-policy" class="modal-form-checkbox-label"></label>
+          
+
+          <label for="checkbox" class="checkbox">
+            <input type="checkbox" id="checkbox" class="checkbox-active visually-hidden">
+            <span class="checkbox-modal"></span>
+            Соглашаюсь с рассылкой и принимаю&#8201;<a href="#" class="checkbox-link">Условия договора</a>
+          </label>
           <button type="submit" class="submit-form-btn">
             Отправить
           </button>
