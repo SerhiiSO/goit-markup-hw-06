@@ -448,6 +448,10 @@ body {
   list-style: none;
 }
 .footer-location {
+  font-family: var(--primary-font);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 00.03em;
   color: var(--primary-white);
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -514,6 +518,7 @@ body {
   margin-right: 93px;
 }
 .footer-modal-form {
+  margin-left: 15px;
   display: block;
   font-family: var(--primary-font);
   font-size: 14px;
@@ -529,9 +534,10 @@ body {
 }
 .footer-subscribe-form {
   position: relative;
+  display: flex;
 }
 .footer-form-field {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
@@ -725,6 +731,11 @@ body {
 
   fill: var(--secondary-font-color);
 }
+.close-btn:hover,
+.close-btn:focus {
+  border-color: var(--link-hover-focus);
+  fill: var(--link-hover-focus);
+}
 
 .backdrop.is-hidden {
   visibility: hidden;
@@ -750,7 +761,7 @@ body {
   margin-bottom: 12px;
 }
 .modal-form-field {
-  margin-top: 4px;
+  margin-bottom: 10px;
   position: relative;
   font-family: var(--primary-font);
   font-size: 12px;
@@ -764,7 +775,6 @@ body {
   display: block;
   position: relative;
   margin-top: 4px;
-  /*margin-bottom: 10px; */
 }
 .modal-form-input {
   width: 100%;
@@ -793,13 +803,21 @@ body {
   left: 12px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-form-comments {
+  font-family: var(--primary-font);
+  color: var(--primary-font-color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 20px;
+}
 .modal-form-message {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 120px;
-  margin-bottom: 20px;
-  margin-top: 4px;
+
   padding: 12px 16px;
   resize: none;
   outline: none;
@@ -812,19 +830,6 @@ body {
 .modal-form-message:hover {
   border-color: var(--link-hover-focus);
 }
-/* .modal-form-checkbox:checked + .modal-form-checkbox-label::before {
-  background-color: #2196f3;
-}
-.modal-form-checkbox-label::before {
-  display: block;
-  content: "";
-  width: 18px;
-  height: 18px;
-  border: 1px solid #000000;
-}
-.checkbox-link {
-  color: var(--link-hover-focus);
-} */
 
 .checkbox {
   display: flex;
@@ -840,7 +845,7 @@ body {
 
 .checkbox-modal {
   display: block;
-  width: 15px;
+  width: 16px;
   height: 16px;
   border: 2px solid var(--secondary-font-color);
   border-radius: 2px;
@@ -857,7 +862,7 @@ body {
   border-style: none;
 }
 .checkbox-active:focus + .checkbox-modal {
-  border-color: var(--primary-accent-color);
+  border-color: var(--link-hover-focus);
 }
 .checkbox-link {
   color: var(--link-hover-focus);
@@ -865,9 +870,7 @@ body {
 
 .submit-form-btn {
   display: flex;
-  /* position: absolute; */
-  /* top: 100%;
-  left: 50%; */
+
   margin-right: auto;
   margin-left: auto;
 
